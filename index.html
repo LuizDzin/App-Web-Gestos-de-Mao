@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestos com as Mãos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+<h1 id="titulo" class="btn-primary">
+    Identificador de Gestos com as Mãos
+<br>
+    🤙👍✌👎🖐
+</h1>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+<label class="btn btn-warning">
+    Visualização da WebCam:
+</label>
+<div id="camera"></div>
+<button class="btn btn-success" onclick="takeSnapshot()">
+    Capturar Imagem
+</button>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>
+            Gesto de Mão:
+        </label>
+        <p id="nomeGestoMao"></p>
+        <p id="emojiGestoMao"></p>
+    </div>
+    <br>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label class="btn btn-warning">
+            Imagem do Gesto Capturado:
+        </label>
+        <div id="result"></div>
+        <br> <br>
+        <button class="btn btn-danger" onclick="check()">
+            Prever Gesto
+        </button>
+    </div>
+    </center>
+   <script src="main.js"></script>
+</body>
+</html>

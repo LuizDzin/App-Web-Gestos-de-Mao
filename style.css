@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(94, 169, 201);
+}
+
+#titulo {
+    font-size: 4rem;
+    font-family: Algerian;
+    margin-top: 5px;
+    border-radius: 25px;
+    letter-spacing: 6px;
+}
+
